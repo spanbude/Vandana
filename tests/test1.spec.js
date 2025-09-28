@@ -10,3 +10,15 @@ await page.close();
 
 
 })
+
+test('TC002',async({page})=>
+{
+
+await page.goto("https://testautomationpractice.blogspot.com/");
+await page.locator("//input[@id='name']").fill("Swapnil");
+await page.locator("//input[@id='email']").fill("swapnil17@gmail.com");
+await page.locator("//input[@id='female']").click();
+await page.locator("//input[@id='monday']").click();
+
+
+})
